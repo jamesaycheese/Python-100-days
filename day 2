@@ -1,0 +1,47 @@
+#Day2 
+
+#fstring 
+
+height =1.8
+score = 0
+isWinning = True
+print(f"your score is {score}, your height is {height}, your are winning is {isWinning}")
+
+--------------------------------------------------------------------------------------------
+days = 7
+weeks = 52
+months = 12
+age2=90
+age1=67
+a=ninty_years_old = days *weeks * age2
+b= age_now = days*weeks*age1
+z=a-b
+g=z/7
+m=(z/365) *(12)
+
+print(f"{z} days ,{g} weeks, {m} months left turn 90")
+
+------------------------------------------------------------------------------------------------
+#If the bill was $150.00, split between 5 people, with 12% tip. 
+#Each person should pay (150.00 / 5) * 1.12 = 33.6
+#Format the result to 2 decimal places = 33.60
+#Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.💪
+
+#tip calcullator
+#what was the total bill?
+#what percentage tip would you like to give 
+#how many people to split the bill?
+#each person should pay?
+
+print("welcome to the tip caculator")
+total_bill= input("what is the total bill amount?")
+percentage= input("what percentage tip would you like to give ?(10,12,15)")
+people= input("how many people to split the bill?")
+
+pay=round((float(total_bill)*(1+(float(percentage)/100)))/float(people),2)
+      
+
+print(f"Each person should pay {pay}")
+
+
+
