@@ -1,0 +1,89 @@
+#love calculator
+You are going to write a program that tests the compatibility between two people.
+
+To work out the love score between two people:
+
+Take both people's names and check for the number of times the letters in the word TRUE occurs. Then check for the number of times the letters in the word LOVE occurs. Then combine these numbers to make a 2 digit number.
+
+For Love Scores less than 10 or greater than 90, the message should be:
+
+"Your score is **x**, you go together like coke and mentos."
+
+For Love Scores between 40 and 50, the message should be:
+
+"Your score is **y**, you are alright together."
+
+Otherwise, the message will just be their score. e.g.:
+
+"Your score is **z**."
+
+e.g.
+
+name1 = "Angela Yu"
+
+name2 = "Jack Bauer"
+
+T occurs 0 times
+
+R occurs 1 time
+
+U occurs 2 times
+
+E occurs 2 times
+
+Total = 5
+
+L occurs 1 time
+
+O occurs 0 times
+
+V occurs 0 times
+
+E occurs 2 times
+
+Total = 3
+
+Love Score = 53
+
+Print: "Your score is 53."
+
+=========================================================================================================================
+
+
+
+print("welcome to the love calculator")
+a=name1= input("what is your name? \n").lower()
+b=name2= input("what is their name? \n").lower()
+
+T = a.count("t")+b.count("t")
+R = a.count("r")+b.count("r")
+U = a.count("u")+b.count("u")
+E = a.count("e")+b.count("e")
+L = a.count("l")+b.count("l")
+O = a.count("o")+b.count("o")
+V = a.count("v")+b.count("v")
+E = a.count("e")+b.count("e")
+
+X=T+R+U+E
+Y=L+O+V+E
+Z=int(X)*10+int(Y)
+
+print(f'T occurs {T} times \n'  +
+      f'R occurs {R} times \n'  +
+      f'U occurs {U} times \n'  +
+      f'E occurs {E} times \n'  +
+      f'Total ={X}\n'  +
+      f'L occurs {L} times \n'  +
+      f'O occurs {O} times \n'  +
+      f'V occurs {V} times \n'  +
+      f'E occurs {E} times \n'  +
+      f'Total ={Y} \n' +
+      f'Love Score  ={X}{Y} \n'+
+      f'Your score is {X}{Y} \n')
+
+if Z < 10 or Z> 90:
+    print(f'your score is {Z}, you go together like coke and mentos.')
+elif Z >=40 and Z <=50:
+    print(f'your score is {Z}, you are alright together.')
+else:
+    print(f'your score is {Z}')
