@@ -1,0 +1,70 @@
+#day 4
+random_interger = random.randint(1,10) - cover from 1 -10 
+random_floatingNumbers = random.random() - cover from [0.00 -1) 
+
+------
+import random 
+random.randint(1,3)
+
+
+------
+import random 
+a="Angela, Ben, Jenny, Michael, Chloe"
+b=a.split(",")
+c= random.choice(b)
+print(f'{c} is going to buy the meal today!')
+
+------
+#rock paper siccisor game 
+
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+a=[rock, paper,scissors]
+b=random.choice(a)
+c=random.choice(a)
+print(f' player 1 {b}\n')
+print(f' player 2 {c}\n')
+
+
+if b==rock and c == paper:
+    print('player 2 win')
+elif b==rock and c == rock:
+    print('draw')
+elif b==rock and c == scissors:
+    print('player 1 win')
+elif b==scissors and c == paper:
+    print('player 1 win')
+elif b==scissors and c == rock:
+    print('player 2 win')
+elif b==scissors and c == scissors:
+    print('draw')
+elif b==paper and c == paper:
+    print('draw')
+elif b==paper and c == rock:
+    print('player 1 win')
+elif b==paper and c == scissors:
+    print('player 2 win')
