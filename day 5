@@ -1,0 +1,54 @@
+#day 5
+
+student_heights=input("height").split()
+for n in range (0,len(student_heights)):
+    student_heights[n]= int(student_heights[n])
+print(student_heights)
+total_height=0
+for height in student_heights:
+    total_height += height
+    
+print(total_height)
+
+
+my version to get highest num
+-------
+high_score = input("score").split()
+for x in range (0,len(high_score)):
+    high_score [x] = int(high_score[x])
+print(high_score)
+
+high_num = 0 
+z=[]
+for y in high_score:
+    z.append(y)
+    if z > high_score:
+        high_num =y
+    else:
+        pass
+
+print(f'high num is {y}')
+
+
+lecture way to get highest num
+-----------
+
+high_score = input("score").split()
+for x in range (0,len(high_score)):
+    high_score [x] = int(high_score[x])
+print(high_score)
+
+high_num = 0 
+# z=[]
+for y in high_score:
+#     z.append(y)
+    if y > high_num:
+        high_num =y
+    else:
+        pass
+
+print(f'high num is {y}')
+
+
+
+
