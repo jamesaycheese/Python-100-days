@@ -1,0 +1,31 @@
+#day 6 learn function
+
+
+
+
+def sum_threes(start, finish):
+    y=[]
+
+    if type(start) != int or type(finish) != int:
+        print("start and finish values must be integers")
+    else:
+        for x in range(start,finish+1):
+            if x%3 == 0:
+                y.append(x)
+                        
+        
+        if len(y)> 0:
+            total=sum(y)
+            count=len(y)
+            average=total/count
+            print(f'Total: {total} Count: {count} Average: {average}') 
+        else:
+            print("No multiples of 3 were found")
+          
+
+#     print(total)
+#     print(count)
+#     print(average)
+#     return total
+#     return count
+#     return average
